@@ -1,0 +1,16 @@
+# action.yml
+name: 'Date Checker'
+description: 'Check if date pass requirements'
+inputs:
+  holiday:
+    description: 'Check if day is holiday'
+    required: false
+    default: ''
+outputs:
+  result:
+    description: 'Date check status'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.holiday }}
