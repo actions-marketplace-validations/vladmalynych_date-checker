@@ -17,9 +17,9 @@ TODAY = datetime.now()
 def not_holiday():
     holidays = czech_holidays.Holidays(year=TODAY.year)
     tomorrow = TODAY.date() + timedelta(days=1)
-    if TODAY.date() in holidays or tomorrow in holidays:
-        print("Holiday conditions not met.")
-        return False
+    # if TODAY.date() in holidays or tomorrow in holidays:
+    #     print("Holiday conditions not met.")
+    #     return False
     return True
 
 
