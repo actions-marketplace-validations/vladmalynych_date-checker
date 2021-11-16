@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, time
 
 WORKING_DAYS = [
     [time(0, 0, 0), time(23, 59, 59)],   # Monday
-    [time(0, 0, 0), time(23, 59, 59)],   # Tuesday
+    None,   # Tuesday
     [time(0, 0, 0), time(23, 59, 59)],   # Wednesday
     [time(0, 0, 0), time(15, 00, 00)],   # Thursday
     None,                                # Friday
