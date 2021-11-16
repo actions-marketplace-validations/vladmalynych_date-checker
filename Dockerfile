@@ -12,4 +12,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY src/ /app/
 
 WORKDIR /app
-ENTRYPOINT ["python3", "main.py"]
+ENTRYPOINT ["python3", "/app/main.py"]
