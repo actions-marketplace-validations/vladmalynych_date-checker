@@ -1,9 +1,6 @@
 # action.yml
 name: 'Twisto Date-Checker'
 description: 'Check if date pass requirements'
-outputs:
-  result:
-    description: 'Date validation result'
 runs:
   using: 'docker'
   image: 'Dockerfile'
