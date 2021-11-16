@@ -18,7 +18,7 @@ def not_holiday():
     holidays = czech_holidays.Holidays(year=TODAY.year)
     tomorrow = TODAY.date() + timedelta(days=1)
     # if TODAY.date() in holidays or tomorrow in holidays:
-    #     print("Holiday conditions not met.")
+    #     print(f"[{TODAY}] Holiday conditions not met.")
     #     return False
     return True
 
@@ -28,7 +28,7 @@ def is_working_time():
     if working_day:
         if working_day[0] < TODAY.time() < working_day[1]:
             return True
-    print("Working time conditions not met.")
+    print(f"[{TODAY}] Working time conditions not met.")
     return False
 
 
